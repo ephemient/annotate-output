@@ -81,13 +81,10 @@ fn run(fmt: &str, args: Vec<String>) -> Result<i32, Box<dyn Error>> {
                     Err(err) => break Err(err),
                 }
             }?;
-            println!(
-                "{} I: Finished with exitcode {}",
-                Local::now().format(fmt),
-                rc
-            );
+            let done = Local::now();
             ithread.join().unwrap()?;
             ethread.join().unwrap()?;
+            println!("{} I: Finished with exitcode {}", done.format(fmt), rc);
             Ok(rc)
         }
     }
