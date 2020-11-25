@@ -1,8 +1,12 @@
 [package]
 name = "annotate-output"
+description = "Executes a program annotating the output linewise with time and stream"
 version = "0.1.0"
 authors = ["Daniel Lin <ephemient@gmail.com>"]
+license = "GPL-2.0-only"
 edition = "2018"
+readme = "README.md"
+homepage = "https://github.com/ephemient/annotate-output"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
