@@ -7,6 +7,7 @@ license = "GPL-2.0-only"
 edition = "2018"
 readme = "README.md"
 homepage = "https://github.com/ephemient/annotate-output"
+categories = ["command-line-utilities"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
