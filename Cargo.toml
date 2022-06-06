@@ -13,4 +13,4 @@ categories = ["command-line-utilities"]
 
 [dependencies]
 chrono = "0.4"
-nix = "0.19"
+nix = "0.20"
