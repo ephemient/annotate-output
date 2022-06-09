@@ -77,7 +77,7 @@ fn run(fmt: &str, args: Vec<String>) -> Result<i32, Box<dyn Error>> {
             let rc = loop {
                 match waitpid(child, None) {
                     Ok(WaitStatus::Exited(_, rc)) => break Ok(rc),
-                    Ok(_) | Err(nix::Error::Sys(Errno::EINTR)) => {}
+                    Ok(_) | Err(Errno::EINTR) => {}
                     Err(err) => break Err(err),
                 }
             }?;

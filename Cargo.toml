@@ -1,10 +1,10 @@
 [package]
 name = "annotate-output"
 description = "Executes a program annotating the output linewise with time and stream"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Daniel Lin <ephemient@gmail.com>"]
 license = "GPL-2.0-only"
-edition = "2018"
+edition = "2021"
 readme = "README.md"
 homepage = "https://github.com/ephemient/annotate-output"
 categories = ["command-line-utilities"]
@@ -13,4 +13,4 @@ categories = ["command-line-utilities"]
 
 [dependencies]
 chrono = "0.4"
-nix = "0.19"
+nix = "0.24"
